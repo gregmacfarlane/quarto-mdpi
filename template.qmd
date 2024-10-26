@@ -1,8 +1,11 @@
 ---
-title: "Demo aft format to use as template"
+title: "Demo MDPI to use as template"
+titlecitation: "Demo MDPI"
 format:
   mdpi-pdf:
     keep-tex: true  
+    journal: futuretransp
+correspondence: "Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)"
 author:
   - name: John Doe
     affiliations:
@@ -16,7 +19,8 @@ author:
     orcid: 0000-0000-0000-0000
     email: JD@example.org
     url: https://example.org/
-  - name: his friend
+    corresponding: true
+  - name: Another Author
     affiliations:
       - Another Affiliation
 abstract: |
@@ -34,25 +38,24 @@ informedconsent: |
   Any research article describing a study involving humans should contain this statement. Please add ``Informed consent was obtained from all subjects involved in the study.'' OR ``Patient consent was waived due to REASON (please provide a detailed justification).'' OR ``Not applicable'' for studies not involving humans. You might also choose to exclude this statement if the study did not involve humans.
 dataavailability: |
   We encourage all authors of articles published in MDPI journals to share their research data. In this section, please provide details regarding where data supporting reported results can be found, including links to publicly archived datasets analyzed or generated during the study.
-keywords: [template, demo]
 reference-section-title: References
 bibliography: bibliography.bib  
 ---
 
-## Introduction {#sec-intro}
+# Introduction {#sec-intro}
 
 This is a dummy example only for the purpose to use this repo as a template starter for creating new formats.  For this `article-format-template` we call our dummy article `aft`. 
 
 This quarto extension format supports PDF and HTML outputs. `quarto-journals` is aiming at porting existing {{< latex >}} template from journals to be used with quarto. PDF format is what require the most work to fit the journals guideline, but Quarto offer a nice rendering for HTML output too. This demo format template only use basic HTML format without any customization for now.
 
-## About Quarto Extensions formats And Quarto Journals Article
+# About Quarto Extensions formats And Quarto Journals Article
 
 First, please get familiar with the following resources: 
 
 - [Creating Formats](https://quarto.org/docs/extensions/formats.html) in Quarto as part of the [Extensions](https://quarto.org/docs/extensions/) mechanism.
 - [Journals Articles](https://quarto.org/docs/journals/) for Quarto.
 
-## Structure of this repository
+# Structure of this repository
 
 Everything for the extensions is in `_extensions`. See Quarto doc for details. 
 
@@ -175,13 +178,6 @@ m_pois <- glm(Days ~ (Eth + Sex + Age + Lrn)^2, data = quine, family = poisson)
 summary(m_pois)
 ```
 
-### Text color {#sec-summary}
-
-Our format makes applying color on inline text possible using the `[content]{color=<name>}` syntax. Let's see an example.
-
-Here we are using a special feature of our format which is the coloring because [pink is a **nice** color]{color=mypink}.
-
-This is possible thanks to the Lua Filter included in the custom extension format.
 
 ### Using references {.unnumbered}
 
