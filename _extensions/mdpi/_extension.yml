@@ -25,12 +25,7 @@ contributes:
         - "partials/_authors.tex"
       format-resources:
         # Add here the resources required for the PDF rendering
-        - mdpi.cls
-        - journalnames.tex
-        - logo-orcid.pdf
-        - logo-updates.eps
-        - logo-ccby.eps
-        - logo-mdpi.eps
+        - Definitions/
     html:
       # define default configuration for the html version of your format
       number-sections: true
