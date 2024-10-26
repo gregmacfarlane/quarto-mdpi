@@ -21,6 +21,9 @@ author:
       - Another Affiliation
 abstract: |
   This document is only a demo explaining how to use the template.
+keywords:
+  - keyword one
+  - keyword two
 authorcontributions: |
   Use the CRediT taxonomy
 studyfunding: |

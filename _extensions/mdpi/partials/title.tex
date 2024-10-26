@@ -19,4 +19,11 @@ $if(titlecitation)$
 $else$
 \TitleCitation{$title$}
 $endif$
-  
+
+$if(abstract)$
+\abstract{$abstract$}
+$endif$
+$if(keywords)$
+\keyword{$for(keywords/allbutlast)$$keywords$;$endfor$
+$for(keywords/last)$$keywords$$endfor$}
+$endif$
