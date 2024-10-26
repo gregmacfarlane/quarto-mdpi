@@ -19,10 +19,12 @@ contributes:
       documentclass: mdpi
       colorlinks: true
       urlcolor: red
+      template: mdpitemplate.tex
       template-partials:
         # Add here the partials your format is using
+        - "partials/doc-class.tex"
         - "partials/title.tex"
-        - "partials/_authors.tex"
+        - "partials/pandoc.tex"
       format-resources:
         # Add here the resources required for the PDF rendering
         - Definitions/
