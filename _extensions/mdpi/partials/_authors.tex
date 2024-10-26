@@ -16,15 +16,21 @@ $endfor$
 
 \Author{$if(by-author/allbutlast)$
 $for(by-author/allbutlast/pairs)$
-$it.value.name.literal$$if(it.value.orcid)$\orcid$it.key/alpha/uppercase${}$endif$$sep$, 
+$it.value.name.literal$$$^{$for(it.value.affiliations)$$it.id$$sep$,$endfor$}$$$if(it.value.orcid)$\orcid$it.key/alpha/uppercase${}$endif$$sep$, 
 $endfor$
-~and~$for(by-author/last)$$it.name.literal$$if(it.orcid)$\orcid${ author/length/alpha/uppercase }{}$endif$$endfor$
+~and~$for(by-author/last)$$it.name.literal$$$^{$for(it.affiliations)$$it.id$$sep$,$endfor$}$$$if(it.orcid)$\orcid${ author/length/alpha/uppercase }{}$endif$$endfor$
 $else$
 ${ by-author.name.literal } $if(by-author.orcid)$$$^{$for(by-author.affiliations)$$it.id$$sep$,$endfor$}$$\orcidA{}$endif$
 $endif$}
 
 \AuthorNames{$for(by-author)$ $by-author.name.literal$$sep$, $endfor$}
-\address{myaffiliation}
+
+% address for the affiliations
+\address$if(by-affiliation/allbutlast)$ $else$[1]$endif${%
+$for(by-affiliation)$
+$$^{$it.id$}$$ \quad $it.name$\\
+$endfor$}
+
 
 \newcommand\getfirst[1]{\getfirstaux#1\relax} \def\getfirstaux#1#2\relax{#1}
 \AuthorCitation{$for(by-author)$$by-author.name.family$, \getfirst{$by-author.name.given$}.$sep$; $endfor$}

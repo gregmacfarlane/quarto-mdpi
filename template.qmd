@@ -9,20 +9,16 @@ correspondence: "Correspondence: e-mail@e-mail.com; Tel.: (optional; include cou
 author:
   - name: John Doe
     affiliations:
-      - name: Dummy org
-        department: Cool Dep
-        address: Somewhere
-        city: Magic city
-        country: best one
-        postal-code: 9999
-      - Demo Journal
+      - id: 1
+        name: University
     orcid: 0000-0000-0000-0000
     email: JD@example.org
     url: https://example.org/
     corresponding: true
   - name: Another Author
     affiliations:
-      - Another Affiliation
+      - id: 2
+        name: A different place
 abstract: |
   This document is only a demo explaining how to use the template.
 keywords:
