@@ -26,6 +26,7 @@ contributes:
         - "partials/title.tex"
         - "partials/pandoc.tex"
         - "partials/_authors.tex"
+        - "partials/before-bib.tex"
       format-resources:
         # Add here the resources required for the PDF rendering
         - Definitions/
