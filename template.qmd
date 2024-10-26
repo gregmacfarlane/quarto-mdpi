@@ -21,6 +21,16 @@ author:
       - Another Affiliation
 abstract: |
   This document is only a demo explaining how to use the template.
+authorcontributions: |
+  Use the CRediT taxonomy
+studyfunding: |
+  Please add: ``This research received no external funding'' or ``This research was funded by NAME OF FUNDER grant number XXX.'' and  and ``The APC was funded by XXX''. Check carefully that the details given are accurate and use the standard spelling of funding agency names at \url{https://search.crossref.org/funding}, any errors may affect your future funding.
+institutionalreview: |
+  In this section, you should add the Institutional Review Board Statement and approval number, if relevant to your study. You might choose to exclude this statement if the study did not require ethical approval.
+informedconsent: |
+  Any research article describing a study involving humans should contain this statement. Please add ``Informed consent was obtained from all subjects involved in the study.'' OR ``Patient consent was waived due to REASON (please provide a detailed justification).'' OR ``Not applicable'' for studies not involving humans. You might also choose to exclude this statement if the study did not involve humans.
+dataavailability: |
+  We encourage all authors of articles published in MDPI journals to share their research data. In this section, please provide details regarding where data supporting reported results can be found, including links to publicly archived datasets analyzed or generated during the study.
 keywords: [template, demo]
 reference-section-title: References
 bibliography: bibliography.bib  
