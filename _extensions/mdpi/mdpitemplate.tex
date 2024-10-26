@@ -77,10 +77,12 @@ $_authors.tex()$
 $body$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-$before-bib.tex()$
+$after-body.tex()$
 
-\reftitle{References}
-$biblio.tex()$
+$if(cslreferences)$
+\section*{References}
+$cslreferences$
+$endif$
 \PublishersNote{}
 \end{document}
 
